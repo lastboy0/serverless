@@ -1,0 +1,21 @@
+{
+  "name": "mobile-promo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/floating.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lastboy0/serverless.git"
+  },
+  "author": "Ryan C",
+  "bugs": {
+    "url": "https://github.com/lastboy0/serverless/issues"
+  },
+  "homepage": "https://github.com/lastboy0/serverless#readme",
+  "dependencies": {
+    "uuid": "^2.0.3"
+  }
+}

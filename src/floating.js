@@ -5,7 +5,7 @@ const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-depe
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-module.exports.create = (event, context, callback) => {
+module.exports.insert = (event, context, callback) => {
     const timestamp = new Date().getTime();
     const data = JSON.parse(event.body);
     if (typeof data.text !== 'string') {
@@ -36,7 +36,7 @@ module.exports.create = (event, context, callback) => {
         callback(null, {
           statusCode: error.statusCode || 501,
           headers: { 'Content-Type': 'text/plain' },
-          body: 'Couldn\'t create the todo item.',
+          body: 'Couldn\'t insert floating event data.',
         });
         return;
       }
